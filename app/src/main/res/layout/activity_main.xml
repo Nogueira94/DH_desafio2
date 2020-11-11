@@ -31,6 +31,7 @@
             app:hintTextColor="#8492A6">
 
             <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/tiEmail"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:textColor="@color/blueToolbar"/>
@@ -53,6 +54,7 @@
         </com.google.android.material.textfield.TextInputLayout>
 
         <Button
+            android:id="@+id/btnLogin"
             android:layout_marginVertical="20dp"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -112,6 +114,7 @@
         </androidx.constraintlayout.widget.ConstraintLayout>
 
         <Button
+            android:id="@+id/btnRegister"
             android:layout_marginVertical="130dp"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
