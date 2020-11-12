@@ -11,9 +11,7 @@
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:background="@color/blueToolbar"
-        android:theme="@style/ToolbarColoredBackArrow"
         app:layout_constraintTop_toTopOf="parent"
-        app:navigationIcon="@drawable/ic_baseline_arrow_back_24"
         app:title="Digital House Foods"
         app:titleTextColor="#fff" />
 

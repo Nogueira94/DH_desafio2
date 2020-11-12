@@ -16,7 +16,8 @@
             android:layout_height="match_parent"
             android:orientation="vertical">
 
-            <include layout="@layout/image_arrowback"/>
+            <include layout="@layout/image_arrowback"
+                android:id="@+id/ivToolbarRest"/>
 
             <TextView
                 android:layout_width="match_parent"
@@ -27,6 +28,7 @@
                 android:textColor="@color/darkGrey"/>
 
             <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rvPratos"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 app:layoutManager="androidx.recyclerview.widget.GridLayoutManager"

@@ -1,5 +1,7 @@
 package com.example.myapplication.`class`
 
+import android.content.Context
+import android.content.Intent
 import android.graphics.drawable.Drawable
 import android.view.LayoutInflater
 import android.view.View
@@ -10,6 +12,7 @@ import androidx.cardview.widget.CardView
 import androidx.compose.ui.res.loadImageResource
 import androidx.recyclerview.widget.RecyclerView
 import com.example.myapplication.R
+import com.example.myapplication.restaurante
 
 class RestaurantAdapter (private val listaRest : ArrayList<Restaurant>, val listener : onClickRestaurantListener) : RecyclerView.Adapter<RestaurantAdapter.RestaurantViewHolder>() {
     override fun onCreateViewHolder(
@@ -26,7 +29,6 @@ class RestaurantAdapter (private val listaRest : ArrayList<Restaurant>, val list
         holder.tvNameRest.text = rest.nome
         holder.tvEndRest.text = rest.end
         holder.tvHoraRest.text = rest.hora
-
     }
 
     override fun getItemCount() = listaRest.size
@@ -41,10 +43,6 @@ class RestaurantAdapter (private val listaRest : ArrayList<Restaurant>, val list
         var tvEndRest : TextView = itemView.findViewById(R.id.tvEndRest)
         var tvHoraRest : TextView = itemView.findViewById(R.id.tvHoraRest)
 
-
-
-
-
         init {
             itemView.setOnClickListener(this)
         }
@@ -57,7 +55,5 @@ class RestaurantAdapter (private val listaRest : ArrayList<Restaurant>, val list
         }
 
     }
-
-
 
 }
