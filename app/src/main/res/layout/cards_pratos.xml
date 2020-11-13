@@ -12,16 +12,14 @@
         android:layout_height="wrap_content">
 
         <LinearLayout
-            android:background="@drawable/round_pratos"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="vertical">
 
             <ImageView
-                android:background="@drawable/round_pratos"
                 android:id="@+id/ivPrato"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
+                android:layout_height="match_parent"
                 android:adjustViewBounds="true"
                 android:scaleType="centerCrop"
                 android:src="@drawable/image4"
